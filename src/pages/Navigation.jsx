@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { useSelector } from 'react-redux';
-import { getLogin, getUsername } from 'redux/auth/auth-selectors';
+import { getLogin } from 'redux/auth/auth-selectors';
 import { logOut } from 'redux/auth/auth-operations';
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
@@ -8,7 +8,6 @@ import Stack from '@mui/material/Stack';
 
 import { NavigationLink, ButtonS, NavContainer } from './Navigation.styled';
 
-import Button from '@mui/material/Button';
 // import Stack from '@mui/material/Stack';
 import { useNavigate } from 'react-router-dom';
 
@@ -17,20 +16,8 @@ export const Navigation = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const isLogged = useSelector(getLogin);
-  const name = useSelector(getUsername);
+  // const name = useSelector(getUsername);
 
-
-  
-  // export default function ImageAvatars() {
-  //   return (
-  //     <Stack direction="row" spacing={2}>
-  //       <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
-        
-  //       <Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
-  //     </Stack>
-  //   );
-  // }
-  
 
   const onClick = () => {
     dispatch(logOut());
