@@ -26,6 +26,7 @@ color: #1688c9;
 padding: 5px 17px;
 border-radius: 7px;
 margin-left: 17px;
+transform: translatex(0px);
 &:hover{
     cursor: pointer;
     /* scale: 1.05; */
