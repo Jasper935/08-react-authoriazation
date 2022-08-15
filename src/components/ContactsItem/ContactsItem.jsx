@@ -1,7 +1,6 @@
 import styles from '../ContactsItem/ContactsItem.module.css';
 import PropTypes from 'prop-types';
-import ChipDelete from '@mui/joy/ChipDelete';
-import  {Chip}  from '@mui/material';
+
 
 export const ContactsItem = ({ name, number, onDelete, id }) => {
   return (

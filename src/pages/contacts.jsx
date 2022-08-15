@@ -5,7 +5,7 @@ import { ContactsList } from "components/ContactsList/ContactsList"
 import { useSelector } from "react-redux"
 import styled from "styled-components";
 import {HeroBackground} from '../components/Background';
-import {TextSection} from '../components//TextSection';
+// import {TextSection} from '../components//TextSection';
 export const Contacts=()=>{
 
     const loader = useSelector(state => state.contacts.loading);

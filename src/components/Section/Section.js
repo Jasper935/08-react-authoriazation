@@ -15,7 +15,3 @@ Section.propTypes = {
   
 }
 
-{/* <Wrapper className="App">
-    <HeroBackground />
-    <TextSection />
-  </Wrapper> */}
