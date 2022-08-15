@@ -5,12 +5,10 @@ import { Registration } from 'pages/Registration';
 import { LogIn } from 'pages/LogIn';
 import { PrivateRoute } from './PrivateRoute/PrivateRoute';
 import { NotFound } from 'pages/NotFound';
-export const App = () => {
-  // const dispatch = useDispatch();
-  // useEffect(() => {
-  //   dispatch(getRefresh());
-  // }, [dispatch]);
 
+export const App = () => {
+ 
+ 
   return (
     <>
       <Navigation />
@@ -25,9 +23,10 @@ export const App = () => {
             </PrivateRoute>
           }
         />
+        
         <Route path='*' element={<NotFound/>}/>
       </Routes>
-      
+     
     </>
   );
 };

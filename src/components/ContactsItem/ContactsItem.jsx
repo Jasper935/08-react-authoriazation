@@ -1,13 +1,19 @@
 import styles from '../ContactsItem/ContactsItem.module.css';
 import PropTypes from 'prop-types';
+import ChipDelete from '@mui/joy/ChipDelete';
+import  {Chip}  from '@mui/material';
+
 export const ContactsItem = ({ name, number, onDelete, id }) => {
   return (
     <li className={styles.li}>
       <p className="">{name}</p>
       <p>{number}</p>
       <button type="button" className={styles.btn} onClick={() => onDelete(id)}>
-        Delete
+      Delete
       </button>
+    
+
+
     </li>
   );
 };

@@ -66,7 +66,7 @@ export const Form = () => {
         />
       </label>
 
-      <button type="submit">Add contact</button>
+      <button className={styles.add} type="submit">Add contact</button>
     </form>
   );
 };

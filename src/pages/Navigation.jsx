@@ -27,7 +27,7 @@ export const Navigation = () => {
     <NavContainer>
       {!isLogged && (
         <>
-          <NavigationLink to="/registration">Sign up</NavigationLink>
+          <NavigationLink to="/">Sign up</NavigationLink>
           <NavigationLink to="/login">Login</NavigationLink>
         </>
       )}
