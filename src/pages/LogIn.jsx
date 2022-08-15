@@ -47,7 +47,7 @@ const navigate = useNavigate()
   };
 
   const OnClick=()=>{
-    navigate('/registration')
+    navigate('/')
   }
 
   return !isLogged ? (
